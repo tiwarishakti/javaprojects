@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class lnsubsequence {
 	static int incre_subseq(int a[], int l) {
 		int r[] = new int[l];
-		int j = 0, k, m = 0;
+		int j = 0, k;
 		for (k = 0; k < l; k++)
 			r[k] = 1;
 		while (j < l) {
@@ -15,6 +15,7 @@ public class lnsubsequence {
 					r[j] = r[k] + 1;
 			j++;
 		}
+		int m=0;
 		while (k < l) {
 			if (m < r[k]) {
 				m = r[k];
