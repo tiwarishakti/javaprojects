@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+        SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+        <hibernate-mapping>
+        <class name="com.ProductInfo.Product" table="Products">
+        <id name="ProductId" column="ProductId">
+       <generator class="increment"/>
+        </id>
+        <property name="ProductName" length="20"></property>
+        <property name="ProductPrice" ></property>
+        </class>   
+        
+        </hibernate-mapping>
